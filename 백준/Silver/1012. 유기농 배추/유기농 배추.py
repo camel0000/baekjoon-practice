@@ -2,7 +2,7 @@
 # 1012번 유기농배추
 
 import sys
-sys.setrecursionlimit(10000)
+sys.setrecursionlimit(2550)
 
 def dfs(a, b):
     if a < 0 or b < 0 or a >= N or b >= M:
