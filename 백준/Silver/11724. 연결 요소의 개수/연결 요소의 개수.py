@@ -2,7 +2,7 @@
 # 11724번 연결 요소의 개수
 
 import sys
-sys.setrecursionlimit(3000)
+sys.setrecursionlimit(5000)
 
 def dfs(v):
     visited[v] = 1
@@ -15,7 +15,7 @@ N, M = map(int, input().split())
 
 G = [[] for _ in range(N + 1)]
 for _ in range(M):
-    x, y = map(int, sys.stdin.readline().split())
+    x, y = map(int, input().split())
     G[x].append(y)
     G[y].append(x)
 
