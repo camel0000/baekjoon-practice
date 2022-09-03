@@ -1,11 +1,13 @@
+import sys
+input = sys.stdin.readline
+
 N = int(input())
 P = list(map(int, input().split()))
+
 P.sort()
 
-time = 0
-
-for i in range(0, N):           # operating all array
-    for j in range(0, i+1):
-        time += P[j]
-
-print(time)
+sum_ = 0
+for i in range(N):
+    for j in range(0, i + 1):
+        sum_ += P[j]
+print(sum_)
